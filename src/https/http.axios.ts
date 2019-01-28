@@ -87,9 +87,9 @@ export default class AxiosHttp {
     console.group("*** AXIOS ERROR START ***\n\n");
     
     if (error.response) {
-        console.warn("- RESPONSE: \nDATA: ", error.response.data);
-        console.warn("\nSTATUS: ", error.response.status);
-        console.warn("\nHEADERS: ", error.response.headers);
+      if(error.response.data)console.warn("- RESPONSE: \nDATA: ", error.response.data);
+      if(error.response.status)console.warn("\nSTATUS: ", error.response.status);
+      if(error.response.headers)console.warn("\nHEADERS: ", error.response.headers);
     } 
     
     if(error.request) {
@@ -98,8 +98,8 @@ export default class AxiosHttp {
     
     if (error.message) {
       console.warn("- MESSAGE: ",  error.message);
-    }
-
+    } 
+  
     if (error.config) 
       console.warn("\n- CONFIG: " , error.config);
 
