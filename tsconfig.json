@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "es2015", "es6","es2018"],
+    "outDir": "dist",
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "isolatedModules": false,
+    "jsx": "react",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "declaration": false,
+    "noImplicitAny": false,
+    "noImplicitUseStrict": false,
+    "removeComments": true,
+    "noLib": false,
+    "preserveConstEnums": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "sourceMap": false,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["main.ts", "src"],
+  "exclude": ["dist","node_modules"],
+  "compileOnSave": true,
+  "buildOnSave": false
+}
